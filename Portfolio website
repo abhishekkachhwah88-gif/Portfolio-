@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Abhishek Kachhwah</h1>
+    <p>Web Developer | BCA Student</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <img src="assets/profile.jpg" alt="Profile" width="150">
+    <p>I am a passionate BCA student learning web development.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Simple personal portfolio project.</p>
+    </div>
+
+    <div class="card">
+        <h3>Mini CRM</h3>
+        <p>Customer management system project.</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Abhishek</p>
+</footer>
+
+<!-- JS Link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #444;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+function sendMessage(event) {
+    event.preventDefault();
+    alert("Message sent successfully!");
+}
